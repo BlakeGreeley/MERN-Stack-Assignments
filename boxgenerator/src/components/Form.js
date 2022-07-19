@@ -14,15 +14,17 @@ const Form = (props) => {
         <div>
             <form onSubmit = { submitHandler } style={{margin: "20px"}}>
                 <div>
-                    <label htmlFor="firstName">Color</label>
+                    <label htmlFor="firstName">Color: </label>
                     <input
                         type="text"
                         name="color"
                         onChange={ (e) => setColor(e.target.value) }
                     />
                 </div>
-                <button>Add</button>
+                <button>Add New colored Box</button>
             </form>
         </div>
     )
 }
+
+export default Form;
