@@ -6,7 +6,18 @@ import SubContents from './Components/SubContents';
 import Advertisement from './Components/Advertisement';
 
 function App() {
-  
+  return (
+    <div className='app'>
+      <Header/>
+      <Navigation/>
+      <Main>
+        <SubContents/>
+        <SubContents/>
+        <SubContents/>
+        <Advertisement/>
+      </Main>
+    </div>
+  );
 }
 
 export default App;
