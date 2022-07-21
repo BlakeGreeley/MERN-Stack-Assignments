@@ -1,21 +1,14 @@
 import './App.css';
 import Header from './components/Header.js';
-import Navigation from './Components/Navigation';
-import Main from './Components/Main';
-import SubContents from './Components/SubContents';
-import Advertisement from './Components/Advertisement';
+import Navigation from './components/Navigation';
+import Main from './components/Main';
+import SubContents from './components/SubContents';
+import Advertisement from './components/Advertisement';
 
 function App() {
   return (
-    <div className='app'>
+    <div className='Container'>
       <Header/>
-      <Navigation/>
-      <Main>
-        <SubContents/>
-        <SubContents/>
-        <SubContents/>
-        <Advertisement/>
-      </Main>
     </div>
   );
 }
