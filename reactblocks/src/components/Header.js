@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+
 
 const headerStyle = {
     background: 'green',
     height: '100px',
-    width: '1000px',
+    width: '93%',
     margin: '30px',
     border: 'none'
 };

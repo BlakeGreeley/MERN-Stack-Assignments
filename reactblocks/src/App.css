@@ -40,6 +40,14 @@
 
 .Container {
   background-color: grey;
-  margin: 15px;
   padding: 5px;
+  margin: 15px;
+}
+
+.body {
+  display: flex;
+}
+
+.internal {
+  display: flex;
 }

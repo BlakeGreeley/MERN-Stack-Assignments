@@ -9,6 +9,17 @@ function App() {
   return (
     <div className='Container'>
       <Header/>
+      <div className='body'>
+        <Navigation/>
+        <Main>
+          <div>
+            <SubContents/>
+            <SubContents/>
+            <SubContents/>
+            <Advertisement/>
+          </div>
+        </Main>
+      </div>
     </div>
   );
 }

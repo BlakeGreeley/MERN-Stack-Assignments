@@ -1,11 +1,16 @@
-
+const advertisementStyle = {
+    background: 'purple',
+    height: '100px',
+    width: '742px',
+    margin: '30px',
+    border: 'none'
+};
 
 const Advertisement = (props) => {
-
     return (
-    <div className="Advertisement">
-        
-    </div>
+        <div style={advertisementStyle}>
+            
+        </div>
     )
 }
 
