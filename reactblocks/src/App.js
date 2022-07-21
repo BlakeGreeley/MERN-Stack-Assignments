@@ -11,14 +11,14 @@ function App() {
       <Header/>
       <div className='body'>
         <Navigation/>
-        <Main>
-          <div>
-            <SubContents/>
-            <SubContents/>
-            <SubContents/>
-            <Advertisement/>
-          </div>
-        </Main>
+        <div className='main'>
+            <div className='internal'>
+              <div className='subcontent'></div>
+              <div className='subcontent'></div>
+              <div className='subcontent'></div>
+            </div>
+            <div className='advertisement'></div>
+        </div>
       </div>
     </div>
   );

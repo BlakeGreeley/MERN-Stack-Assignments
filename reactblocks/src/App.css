@@ -51,3 +51,29 @@
 .internal {
   display: flex;
 }
+
+.advertisement {
+  background-color: purple;
+  height: 100px;
+  width: 705px;
+  margin-bottom: 20px;
+  margin: 20px;
+  border: none;
+}
+
+.subcontent {
+  background-color: yellow;
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+  border: none;
+}
+
+.main {
+  background-color: red;
+  padding-bottom: 20px;
+    height: 400px;
+    width: 742px;
+    margin: 30px;
+    border: none;
+}
