@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Form from "./components/Form";
-import Display from "./components/Display";
 import './App.css';
 
 
@@ -10,9 +8,16 @@ function App() {
 
   const handleNewTodoSubmit = (event) => {
     event.preventDefault();
-    // console.log(newTodo);
-    // todos.push(newTodo);
-    setTodos([...todos, newTodo]);
+    if (newTodo.length == 0) {
+      return;
+    }
+
+    const todoItem = {
+      text: newTodo,
+      complete: false
+    }
+
+    setTodos([...todos, todoItem]);
     setNewTodo("");
   };
 
@@ -22,6 +27,18 @@ function App() {
     });
 
     setTodos(filteredTodos);
+  };
+
+  const handelToggleComplete = (idx) => {
+    const updatedTodos = todos.map((todo, i) => {
+      if (idx == i) {
+        todo.complete = !todo.complete;
+      }
+
+      return todo;
+    });
+
+    setTodos(updatedTodos);
   }
 
   return (
@@ -39,9 +56,17 @@ function App() {
 
     {
       todos.map((todo, i) => {
+        const todoClasses = [];
+
+        if (todo.complete) {
+          todoClasses.push("line-through");
+        }
         return (
           <div key={i}>
-            <span>{todo}</span>
+            <span className={todoClasses.join(" ")}>{todo.text}</span>
+            <input onChange= {(event) => {
+              handelToggleComplete(i);
+            }} checked={todo.complete} type="checkbox"/>
             <button onClick={(event) => {
               handleTodoDelete(i);
             }}>Delete</button>
