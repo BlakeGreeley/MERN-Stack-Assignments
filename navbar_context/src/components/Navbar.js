@@ -13,5 +13,5 @@ export default () => {
     const { name } = useContext(UserContext);
 
     return <div style= { style }>Hi {name} !</div>
-}
+};
 
