@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {Children, useState } from 'react';
 import UserContext from "../contexts/UserContext";
 
 export default () => {
@@ -10,7 +10,7 @@ export default () => {
                     setName
                     }}
         >
-            { children }
+            { Children }
         </UserContext.Provider>
     );
 };

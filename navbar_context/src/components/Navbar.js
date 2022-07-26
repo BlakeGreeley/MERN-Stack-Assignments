@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import UserContext from "../contexts/UserContext";
+import Context from "./../contexts/Context";
 
 const style = {
     background: "purple",
@@ -9,9 +9,19 @@ const style = {
     alignItems: "center"
 };
 
-export default () => {
-    const { name } = useContext(UserContext);
+const Navbar = () => {
+    const context = useContext(Context);
 
-    return <div style= { style }>Hi {name} !</div>
+    return (
+        <nav style = {style}>
+            <div className="nav-wrapper">
+                <span className="brand-logo">Hello, {context.name}</span>
+            </div>
+        </nav>
+    );
 };
+
+export default Navbar
+
+
 
