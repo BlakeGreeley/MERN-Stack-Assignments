@@ -1,5 +1,5 @@
 import React,  { useContext } from "react";
-import UserContext from "./../contexts/Context";
+import Context from "../context/Context";
 
 const Form = () => {
     const context = useContext(Context);
@@ -14,7 +14,7 @@ const Form = () => {
     };
 
     return (
-        <div className='col s12'>
+        <div className='form'>
             <div className="input-field inline" style={{width: "40%"}}>
                 <input 
                     className="validate"
@@ -25,13 +25,13 @@ const Form = () => {
                 />
             </div>
 
-            <div
+            <button
                 onClick={onClick}
                 className="btn red darken-1"
                 style={{marginLeft: '1em'}}
             >
                 <span>Change</span>
-            </div>
+            </button>
         </div>
     );
 };

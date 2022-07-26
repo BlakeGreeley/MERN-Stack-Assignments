@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Context from "./../contexts/Context";
+import Context from "./../context/Context";
 
 const style = {
     background: "purple",
@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <nav style = {style}>
             <div className="nav-wrapper">
-                <span className="brand-logo">Hello, {context.name}</span>
+                <span className="brand-logo">Hello, {context.name} !</span>
             </div>
         </nav>
     );
