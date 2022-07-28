@@ -18,12 +18,13 @@ function App() {
       <>
         <h1 className='title'>Axios Pokemon API</h1>
         <div className='App' style={{border:"solid black 3px", 
-        width:"300px",
+        width:"30%",
         fontSize:"24px",
         alignItems:"center", 
         textAlign:"center", 
         margin:"20px",
-        marginLeft: "33%",
+        marginLeft: "35%",
+        marginRight: "35%",
         display:"flex",
         backgroundColor:"red",
         color: "white"}}>
