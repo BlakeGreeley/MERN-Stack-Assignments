@@ -1,0 +1,28 @@
+This practice is to test running get urls through postmanb using the 
+pokemon api. 
+
+
+1st Get url: https://pokeapi.co/api/v2/pokemon/1/
+
+results:
+recieved bulbasuar and all its information.
+
+2nd Get url: https://pokeapi.co/api/v2/pokemon/433/
+
+results:
+recieved chingling and all its information.
+
+3rd Get url:  https://pokeapi.co/api/v2/pokemon/23/
+
+results:
+recieved ekans and all its information.
+
+4th Get url:  https://pokeapi.co/api/v2/pokemon/87/
+
+results:
+recieved dewgong and all its information.
+
+5th Get url:  https://pokeapi.co/api/v2/pokemon/127/
+
+results:
+recieved pinsir and all its information.
